@@ -1,4 +1,3 @@
-module.exports = {
-   "Alert",
-
-}
+const list = ["Alert"]
+    
+module.exports = list
