@@ -1,3 +1,3 @@
-const list = ["Alert"]
+const list = ["DanielleWidget"]
     
 module.exports = list
