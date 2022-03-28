@@ -73,7 +73,7 @@ if (!config.runsInWidget) {
     console.log(alert.textFieldValue(0))
     
     
-    await widget.presentMedium()	
+    //await widget.presentMedium()	
 } else {    
     Script.setWidget(widget)    
     Script.complete()
