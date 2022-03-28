@@ -1,3 +1,3 @@
-const list = ["DanielleWidget"]
+const list = ["DanielleWidget", "FromDanielleWidget"]
     
 module.exports = list
