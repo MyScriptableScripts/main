@@ -3,7 +3,6 @@ async function updateScript(scriptName) {
   let filePath = `${files.documentsDirectory()}/${scriptName}.js`
   let exists = files.fileExists(filePath)
   try {
-    
     const req = new Request(`https://raw.githubusercontent.com/MyScriptableScripts/main/main/${encodeURIComponent(scriptName)}.js`);
     const codeString = await req.loadString()
     const errorResult = "404: Not Found"
