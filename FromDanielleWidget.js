@@ -5,7 +5,12 @@ const postUrl = "https://defiant-curse-mirror.glitch.me/from-dani"
 const request = new Request(url);
 const response = await request.loadString()
 
-const boldFont = new Font("AmericanTypewriter-CondensedBold", 20)
+const textSize = 20;
+if (response.length > 100) textSize -= 2;
+if (response.length > 150) textSize -= 2;
+if (response.length > 200) textSize -= 2;
+
+const boldFont = new Font("AmericanTypewriter-CondensedBold", textSize)
 
 const gradientColors = [        
     new Color("#28282B"),    
