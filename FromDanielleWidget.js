@@ -6,9 +6,9 @@ const request = new Request(url);
 const response = await request.loadString()
 
 var textSize = 20;
-if (response.length > 100) textSize -= 2;
-if (response.length > 150) textSize -= 2;
-if (response.length > 200) textSize -= 2;
+if (response.length > 100) textSize -= 1;
+if (response.length > 150) textSize -= 1;
+if (response.length > 200) textSize -= 1;
 
 const boldFont = new Font("AmericanTypewriter-CondensedBold", textSize)
 
